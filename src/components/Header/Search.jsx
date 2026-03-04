@@ -12,12 +12,15 @@ const Search = () => {
                 />
 
                 <button className="px-3 sm:px-5 py-1.5 sm:py-2 border-l border-gray-300 bg-gray-100 hover:bg-gray-200 transition">
-                    <SearchIcon size={18} className="sm:w-5 sm:h-5" />
+                    <SearchIcon
+                        size={18}
+                        className="sm:w-5 sm:h-5 cursor-pointer"
+                    />
                 </button>
             </div>
 
             {/* Mic Button - Hidden on small screens */}
-            <button className="hidden sm:block p-1.5 sm:p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+            <button className="hidden sm:block p-1.5 sm:p-2 rounded-full bg-gray-100 cursor-pointer hover:bg-gray-200 transition">
                 <Mic size={18} className="sm:w-5 sm:h-5" />
             </button>
         </div>
