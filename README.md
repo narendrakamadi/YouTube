@@ -7,6 +7,7 @@ Developed a YouTube-inspired video streaming application using React and Redux T
 - Created skeleton of website
 - Routing
 - Header, sidebar, video feed and watch page layout
+- Header UI Completed
 
 ## Packages Used
 
