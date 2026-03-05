@@ -16,22 +16,26 @@ const QuickLinks = () => {
         "Playlists",
         "Data Structures",
         "Bloom",
+        "Joy",
+        "Current Affaires",
     ];
     return (
-        <div className="sticky z-40 bg-white border-b border-gray-200">
-            <div className="flex gap-3 px-4 py-3 overflow-x-auto whitespace-nowrap scrollbar-hide">
-                {quickLinks.map((item, index) => (
-                    <button
-                        key={index}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition duration-200 flex-shrink-0 ${
-                            index === 0
-                                ? "bg-gray-900 text-white hover:bg-gray-800"
-                                : "bg-gray-100 text-gray-900 hover:bg-gray-200"
-                        }`}
-                    >
-                        {item}
-                    </button>
-                ))}
+        <div className="sticky top-0 z-40 bg-white border-b border-gray-200">
+            <div className="overflow-x-auto">
+                <div className="flex gap-3 px-4 py-3 w-max">
+                    {quickLinks.map((item, index) => (
+                        <button
+                            key={index}
+                            className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap ${
+                                index === 0
+                                    ? "bg-gray-900 text-white"
+                                    : "bg-gray-100 text-gray-900 hover:bg-gray-200"
+                            }`}
+                        >
+                            {item}
+                        </button>
+                    ))}
+                </div>
             </div>
         </div>
     );
