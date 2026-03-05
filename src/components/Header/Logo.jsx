@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import hamburger from "../../assets/icons/hamburger.svg";
 import youtube from "../../assets/icons/youtube.svg";
 import { toggleMenu } from "../../utils/appSlice";
+import { Link } from "react-router-dom";
 
 const Logo = () => {
     const dispatch = useDispatch();
@@ -18,13 +19,15 @@ const Logo = () => {
                     className="w-5 h-5 sm:w-6 sm:h-6"
                 />
             </div>
-            <div>
-                <img
-                    src={youtube}
-                    alt="Logo"
-                    className="w-20 sm:w-25 h-5 sm:h-6"
-                />
-            </div>
+            <Link to="/">
+                <div>
+                    <img
+                        src={youtube}
+                        alt="Logo"
+                        className="w-20 sm:w-25 h-5 sm:h-6"
+                    />
+                </div>
+            </Link>
         </div>
     );
 };
