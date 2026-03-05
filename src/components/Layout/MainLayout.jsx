@@ -3,9 +3,9 @@ import Header from "../Layout/Header";
 
 const MainLayout = () => {
     return (
-        <div className="flex flex-col h-screen bg-white">
+        <div className="">
             <Header />
-            <div className="flex flex-1 overflow-hidden">
+            <div className="">
                 <Outlet />
             </div>
         </div>

@@ -1,35 +1,33 @@
-const VideoCard = ({ video }) => {
+const VideoCard = ({video}) => {
     return (
-        <div className="cursor-pointer">
+        <div className="group w-full cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
             {/* Thumbnail */}
-            <div className="group overflow-hidden rounded-xl">
+            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
                 <img
                     src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-110"
+                    alt="video thumbnail"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
             </div>
 
-            {/* Info Section */}
-            <div className="flex mt-3 gap-3">
-                {/* Avatar */}
+            {/* Video Info */}
+            <div className="flex mt-3">
                 <img
                     src={video.avatar}
                     alt="channel"
-                    className="w-10 h-10 rounded-full"
+                    className="w-9 h-9 rounded-full"
                 />
 
-                {/* Text */}
-                <div className="flex flex-col">
-                    <h3 className="text-sm font-semibold leading-snug line-clamp-2">
+                <div className="ml-3">
+                    <h3 className="text-sm font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors">
                         {video.title}
                     </h3>
 
-                    <p className="text-xs text-gray-600 mt-1">
+                    <p className="text-sm text-gray-600">
                         {video.channel}
                     </p>
 
-                    <p className="text-xs text-gray-500">
+                    <p className="text-sm text-gray-600">
                         {video.views} views • {video.time}
                     </p>
                 </div>

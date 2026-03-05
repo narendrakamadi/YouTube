@@ -5,7 +5,7 @@ export const videos = [
         channel: "Code Academy",
         views: "120K",
         time: "2 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=1",
     },
     {
@@ -14,7 +14,7 @@ export const videos = [
         channel: "Frontend Mastery",
         views: "45K",
         time: "1 week ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=2",
     },
     {
@@ -23,7 +23,7 @@ export const videos = [
         channel: "Dev Simplified",
         views: "300K",
         time: "3 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=3",
     },
     {
@@ -32,7 +32,7 @@ export const videos = [
         channel: "Tech Tutorials",
         views: "90K",
         time: "4 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=4",
     },
     {
@@ -41,7 +41,7 @@ export const videos = [
         channel: "Python Dev",
         views: "75K",
         time: "5 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=5",
     },
     {
@@ -50,7 +50,7 @@ export const videos = [
         channel: "Backend Hub",
         views: "210K",
         time: "6 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=6",
     }, {
         id: 7,
@@ -58,7 +58,7 @@ export const videos = [
         channel: "Code Academy",
         views: "120K",
         time: "2 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=1",
     },
     {
@@ -67,7 +67,7 @@ export const videos = [
         channel: "Frontend Mastery",
         views: "45K",
         time: "1 week ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=2",
     },
     {
@@ -76,7 +76,7 @@ export const videos = [
         channel: "Dev Simplified",
         views: "300K",
         time: "3 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=3",
     },
     {
@@ -85,7 +85,7 @@ export const videos = [
         channel: "Tech Tutorials",
         views: "90K",
         time: "4 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=4",
     },
     {
@@ -94,7 +94,7 @@ export const videos = [
         channel: "Python Dev",
         views: "75K",
         time: "5 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=5",
     },
     {
@@ -103,7 +103,7 @@ export const videos = [
         channel: "Backend Hub",
         views: "210K",
         time: "6 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=6",
     },
     {
@@ -112,7 +112,7 @@ export const videos = [
         channel: "Code Academy",
         views: "120K",
         time: "2 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=1",
     },
     {
@@ -121,7 +121,7 @@ export const videos = [
         channel: "Frontend Mastery",
         views: "45K",
         time: "1 week ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=2",
     },
     {
@@ -130,7 +130,7 @@ export const videos = [
         channel: "Dev Simplified",
         views: "300K",
         time: "3 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=3",
     },
     {
@@ -139,7 +139,7 @@ export const videos = [
         channel: "Tech Tutorials",
         views: "90K",
         time: "4 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=4",
     },
     {
@@ -148,7 +148,7 @@ export const videos = [
         channel: "Python Dev",
         views: "75K",
         time: "5 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=5",
     },
     {
@@ -157,7 +157,7 @@ export const videos = [
         channel: "Backend Hub",
         views: "210K",
         time: "6 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=6",
     },
     {
@@ -166,7 +166,7 @@ export const videos = [
         channel: "Code Academy",
         views: "120K",
         time: "2 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=1",
     },
     {
@@ -175,7 +175,7 @@ export const videos = [
         channel: "Frontend Mastery",
         views: "45K",
         time: "1 week ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=2",
     },
     {
@@ -184,7 +184,7 @@ export const videos = [
         channel: "Dev Simplified",
         views: "300K",
         time: "3 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=3",
     },
     {
@@ -193,7 +193,7 @@ export const videos = [
         channel: "Tech Tutorials",
         views: "90K",
         time: "4 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=4",
     },
     {
@@ -202,7 +202,7 @@ export const videos = [
         channel: "Python Dev",
         views: "75K",
         time: "5 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=5",
     },
     {
@@ -211,7 +211,7 @@ export const videos = [
         channel: "Backend Hub",
         views: "210K",
         time: "6 days ago",
-        thumbnail: "https://i.ytimg.com/vi/f47wrfs7cbA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaJjrXEgFCwFaj_Dg9gnDN9ePsmQ",
+        thumbnail: "https://i.ytimg.com/vi/aEu4neydFfs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOFHTnQbXeEf74Z3Xrhn57OjGXnQ",
         avatar: "https://i.pravatar.cc/40?img=6",
     }
 ];

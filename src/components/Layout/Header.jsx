@@ -5,14 +5,16 @@ import Profile from "../Header/Profile";
 
 const Header = () => {
     return (
-        <div className="sticky top-0 z-50 flex items-center justify-between px-2 sm:px-4 py-2 sm:py-3 gap-2 sm:gap-4 border-b border-gray-200 bg-white">
+        <div className="sticky top-0 z-50 flex items-center justify-between gap-2 px-3 sm:px-4 py-2 border-b border-gray-200 bg-white">
+            {/* Left */}
             <Logo />
-            <div className="hidden md:flex flex-1 max-w-2xl">
+
+            {/* Center Search (Desktop only) */}
+            <div className="flex-1 max-w-[160px] sm:max-w-xs md:max-w-xl">
                 <Search />
             </div>
-            <div className="flex md:hidden flex-1">
-                <Search />
-            </div>
+
+            {/* Right */}
             <Profile />
         </div>
     );
