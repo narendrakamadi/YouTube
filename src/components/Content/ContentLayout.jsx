@@ -1,14 +1,13 @@
-import React from "react";
 import QuickLinks from "./QuickLinks";
-import Shorts from "./Shorts";
 import VideoFeed from "./VideoFeed";
 
 const ContentLayout = () => {
     return (
-        <div className="p-2">
+        <div className="flex-1 flex flex-col overflow-y-auto bg-white">
             <QuickLinks />
-            <Shorts />
-            <VideoFeed />
+            <div className="flex-1">
+                <VideoFeed />
+            </div>
         </div>
     );
 };

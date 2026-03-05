@@ -4,7 +4,7 @@ import ContentLayout from "../components/Content/ContentLayout";
 
 const Home = () => {
     return (
-        <div className="flex p-6">
+        <div className="flex h-screen bg-white">
             <SidebarLayout />
             <ContentLayout />
         </div>

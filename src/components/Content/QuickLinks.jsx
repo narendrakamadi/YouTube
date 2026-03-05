@@ -4,40 +4,34 @@ const QuickLinks = () => {
     const quickLinks = [
         "All",
         "Music",
-        "Mixes",
         "News",
-        "Jukebox",
-        "Playlists",
-        "Movie musicals",
+        "Mixes",
+        "Hariharan",
         "Live",
+        "Mantras",
         "Podcasts",
-        "Lo-fi",
+        "Movie musicals",
+        "Jukebox",
         "APIs",
-        "Arijit Singh",
-        "Rainbow Dash",
-        "Indian pop music",
-        "Thrillers",
-        "Vocal Music",
-        "Presentations",
-        "Consumer Electronics",
+        "Playlists",
+        "Data Structures",
+        "Bloom",
     ];
     return (
-        <div>
-            <div className="w-full border-b bg-white">
-                <div className="flex gap-3 px-4 py-3 overflow-x-auto whitespace-nowrap scrollbar-hide">
-                    {quickLinks.map((item, index) => (
-                        <button
-                            key={index}
-                            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
-                                index === 0
-                                    ? "bg-black text-white"
-                                    : "bg-gray-100 hover:bg-gray-200 text-gray-800"
-                            }`}
-                        >
-                            {item}
-                        </button>
-                    ))}
-                </div>
+        <div className="sticky z-40 bg-white border-b border-gray-200">
+            <div className="flex gap-3 px-4 py-3 overflow-x-auto whitespace-nowrap scrollbar-hide">
+                {quickLinks.map((item, index) => (
+                    <button
+                        key={index}
+                        className={`px-4 py-2 rounded-full text-sm font-medium transition duration-200 flex-shrink-0 ${
+                            index === 0
+                                ? "bg-gray-900 text-white hover:bg-gray-800"
+                                : "bg-gray-100 text-gray-900 hover:bg-gray-200"
+                        }`}
+                    >
+                        {item}
+                    </button>
+                ))}
             </div>
         </div>
     );

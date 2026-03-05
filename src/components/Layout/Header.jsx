@@ -5,7 +5,7 @@ import Profile from "../Header/Profile";
 
 const Header = () => {
     return (
-        <div className="flex items-center justify-between px-2 sm:px-4 py-2 sm:py-3 gap-2 sm:gap-4">
+        <div className="sticky top-0 z-50 flex items-center justify-between px-2 sm:px-4 py-2 sm:py-3 gap-2 sm:gap-4 border-b border-gray-200 bg-white">
             <Logo />
             <div className="hidden md:flex flex-1 max-w-2xl">
                 <Search />
