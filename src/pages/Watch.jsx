@@ -5,16 +5,18 @@ import RecomendedVideos from "../components/Content/Watch/RecomendedVideos";
 
 const Watch = () => {
     return (
-        <div className="p-6">
-            <div className="flex flex-col lg:flex-row gap-6">
-                <div className="w-full lg:w-[70%]">
+        <div className="px-3 py-4 sm:px-4 lg:px-6">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+                <div className="w-full min-w-0">
                     <Video />
-                    <div className="mt-6">
-                        <Comment />
-                    </div>
                 </div>
-                <div className="h-screen">
+
+                <div className="w-full min-w-0 lg:row-span-2">
                     <RecomendedVideos />
+                </div>
+
+                <div className="w-full min-w-0">
+                    <Comment />
                 </div>
             </div>
         </div>

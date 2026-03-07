@@ -113,10 +113,10 @@ const RecomendedVideos = () => {
     const shouldScroll = suggestedVideos.length > 6;
 
     return (
-        <div className="w-full lg:w-[30%]">
-            <div className="sticky top-6">
-                <div className="bg-white rounded-lg shadow">
-                    <div className="flex gap-2 p-3 border-b overflow-x-auto">
+        <div className="w-full">
+            <div className="lg:sticky lg:top-6">
+                <div className="rounded-lg bg-white shadow">
+                    <div className="flex gap-2 overflow-x-auto border-b p-3">
                         {quickLinks.map((item, index) => (
                             <button
                                 key={index}
@@ -134,31 +134,31 @@ const RecomendedVideos = () => {
                     <div
                         className={
                             shouldScroll
-                                ? "max-h-[calc(100vh-200px)] overflow-y-auto"
+                                ? "h-auto overflow-visible lg:max-h-[calc(100dvh-120px)] lg:overflow-y-auto"
                                 : "h-auto overflow-visible"
                         }
                     >
                         {suggestedVideos.map((video) => (
                             <div
                                 key={video.id}
-                                className="flex gap-2 p-2 hover:bg-gray-50 cursor-pointer"
+                                className="flex cursor-pointer gap-2 p-2 hover:bg-gray-50"
                             >
-                                <div className="relative w-40 h-24 flex-shrink-0">
+                                <div className="relative h-24 w-40 flex-shrink-0">
                                     <img
                                         src={video.thumbnail}
                                         alt={video.title}
-                                        className="w-full h-full object-cover rounded-lg"
+                                        className="h-full w-full rounded-lg object-cover"
                                     />
-                                    <span className="absolute bottom-1 right-1 bg-black/80 text-white text-xs px-1 rounded">
+                                    <span className="absolute bottom-1 right-1 rounded bg-black/80 px-1 text-xs text-white">
                                         {video.duration}
                                     </span>
                                 </div>
 
-                                <div className="flex-1 min-w-0">
-                                    <h3 className="text-sm font-medium line-clamp-2 mb-1">
+                                <div className="min-w-0 flex-1">
+                                    <h3 className="mb-1 line-clamp-2 text-sm font-medium">
                                         {video.title}
                                     </h3>
-                                    <p className="text-xs text-gray-600 flex items-center gap-1">
+                                    <p className="flex items-center gap-1 text-xs text-gray-600">
                                         {video.channel}
                                         {video.verified && <span>✓</span>}
                                     </p>
@@ -168,15 +168,13 @@ const RecomendedVideos = () => {
                                             ` • ${video.uploadTime}`}
                                     </p>
                                     {video.isNew && (
-                                        <span className="text-xs bg-gray-200 px-2 py-0.5 rounded mt-1 inline-block">
+                                        <span className="mt-1 inline-block rounded bg-gray-200 px-2 py-0.5 text-xs">
                                             New{" "}
                                         </span>
                                     )}
                                 </div>
 
-                                <button className="text-gray-600 h-6 w-6">
-                                    ⋮
-                                </button>
+                                <button className="h-6 w-6 text-gray-600">⋮</button>
                             </div>
                         ))}
                     </div>
