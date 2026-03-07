@@ -20,13 +20,18 @@ const You = () => {
                 {items.map((item, index) => (
                     <li
                         key={index}
-                        className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded cursor-pointer transition duration-150"
+                        className="flex px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded cursor-pointer transition duration-150"
                     >
+                        <img
+                            className="rounded-full w-8 h-8 sm:w-6 sm:h-6 mx-4 cursor-pointer hover:opacity-80 transition duration-200"
+                            src="https://avatars.githubusercontent.com/u/6338797?v=4&size=64"
+                            alt="Profile"
+                        />
                         {item}
                     </li>
                 ))}
                 <li className="px-3 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded cursor-pointer transition duration-150 font-medium">
-                    Show more
+                    ⌄ Show more
                 </li>
             </ul>
         </div>
