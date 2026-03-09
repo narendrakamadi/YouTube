@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
+import { formatViews, timeAgo } from "../../utils/Helper";
 
-const VideoCard = ({video}) => {
+const VideoCard = ({ video }) => {
+    const {
+        id,
+        snippet: { title, thumbnails, channelTitle, publishedAt },
+        statistics: { viewCount },
+    } = video;
+
     return (
-        <Link key={video.id} to={"/watch?v=" + video.id}>
+        <Link key={id} to={"/watch?v=" + id}>
             <div className="group w-full cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
                 {/* Thumbnail */}
                 <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
                     <img
-                        src={video.thumbnail}
+                        src={thumbnails.high.url}
                         alt="video thumbnail"
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
@@ -16,22 +23,21 @@ const VideoCard = ({video}) => {
                 {/* Video Info */}
                 <div className="flex mt-3">
                     <img
-                        src={video.avatar}
+                        src={thumbnails.default.url}
                         alt="channel"
                         className="w-9 h-9 rounded-full"
                     />
 
                     <div className="ml-3">
                         <h3 className="text-sm font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors">
-                            {video.title}
+                            {title}
                         </h3>
 
-                        <p className="text-sm text-gray-600">
-                            {video.channel}
-                        </p>
+                        <p className="text-sm text-gray-600">{channelTitle}</p>
 
                         <p className="text-sm text-gray-600">
-                            {video.views} views • {video.time}
+                            {formatViews(viewCount)} views •{" "}
+                            {timeAgo(publishedAt)}
                         </p>
                     </div>
                 </div>
