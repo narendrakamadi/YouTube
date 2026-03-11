@@ -1,25 +1,29 @@
-import React from "react";
 import { ArrowUpDown } from "lucide-react";
-import { useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Description from "./Description";
+import { formatViews, timeAgo } from "../../../utils/Helper";
 
-const VideoOptions = () => {
-    const [searchParams] = useSearchParams();
-    const videoId = searchParams.get("v");
-
+const VideoOptions = ({ videoId }) => {
     const videos = useSelector((store) => store.video.videos);
     const videoInfo = videos.find((item) => item.id === videoId);
+    const {
+        snippet: {
+            channelTitle,
+            title,
+            description,
+            publishedAt,
+            thumbnails: { high: { url: channelImg } = {} } = {},
+        } = {},
+        statistics: { viewCount } = {},
+    } = videoInfo || {};
 
-    console.log("videoId: ", videoId);
-    console.log("Videos:", videos);
     console.log("VideoInfo: ", videoInfo);
 
     return (
         <div className="w-full -mt-4 mb-4">
             {/* Title */}
             <h1 className="text-xl md:text-2xl font-semibold text-gray-900">
-                Latest New Bollywood Songs Playlist | Trending Love Songs |
-                Hindi Romantic Songs Collection
+                {title}
                 <span className="text-blue-600 ml-1">#viral</span>
             </h1>
 
@@ -28,14 +32,14 @@ const VideoOptions = () => {
                 {/* Channel Info */}
                 <div className="flex items-center gap-3">
                     <img
-                        src="https://yt3.ggpht.com/crRpfEL-TVTVCnMBaDJRNx7yPPbJ4fK_ooA85FaaQ6U_ijTtug0GAs6g-tblIARrWBC1O-YzKHg=s88-c-k-c0x00ffffff-no-rj"
+                        src={channelImg}
                         alt="channel"
                         className="w-10 h-10 rounded-full"
                     />
 
                     <div>
                         <p className="font-medium text-gray-900">
-                            SoulVibe Studio
+                            {channelTitle}
                         </p>
                         <p className="text-sm text-gray-500">
                             3.23k subscribers
@@ -80,21 +84,15 @@ const VideoOptions = () => {
             </div>
 
             {/* Description */}
-            <div className="mt-4 bg-red-50 rounded-xl p-4 text-sm text-gray-800">
+            <div className="mt-4 bg-gray-100 rounded-xl p-4 text-sm text-gray-800 hover:bg-yellow-50">
                 <p className="font-medium text-red-700">
-                    349 views <span className="ml-2">1 day ago</span>
+                    {formatViews(viewCount)} views •{" "}
+                    <span className="ml-2">{timeAgo(publishedAt)}</span>
                 </p>
-
-                <p className="mt-2">
-                    New Hit Trending Love Songs | Hindi Romantic Songs
-                    Collection | New Hindi Love Songs 2026 | Nonstop Romantic
-                    Songs Playlist | New Song 2026 | Arijit Singh, Jubin
-                    Nautiyal, Atif Aslam | Audio Jukebox
-                </p>
-
-                <button className="mt-1 font-medium hover:underline">
-                    ...more
-                </button>
+                <Description
+                    description={description}
+                    publishAt={{ publishedAt }}
+                />
             </div>
             <div className="mt-4">
                 <div className="flex">

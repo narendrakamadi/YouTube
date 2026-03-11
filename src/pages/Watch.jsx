@@ -36,7 +36,7 @@ const Watch = () => {
                 </div>
 
                 <div className="w-full min-w-0">
-                    <VideoOptions />
+                    <VideoOptions videoId={videoId} />
                     <Comment />
                 </div>
             </div>
