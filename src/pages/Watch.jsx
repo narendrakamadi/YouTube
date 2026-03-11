@@ -2,10 +2,27 @@ import { useSearchParams } from "react-router-dom";
 import Video from "../components/Content/Watch/Video";
 import Comment from "../components/Content/Watch/Comment";
 import RecomendedVideos from "../components/Content/Watch/RecomendedVideos";
+import VideoOptions from "../components/Content/Watch/VideoOptions";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addVideos } from "../utils/videoSlice";
 
 const Watch = () => {
+    const dispatch = useDispatch();
+    const videos = useSelector((store) => store.video.videos);
     const [searchParams] = useSearchParams();
     const videoId = searchParams.get("v");
+
+    useEffect(() => {
+        if (videos.length > 0) return;
+        const cachedVideos = localStorage.getItem("videos");
+
+        if (cachedVideos) {
+            dispatch(addVideos(JSON.parse(cachedVideos)));
+        } else {
+            // fetchVideosFromAPI();
+        }
+    });
 
     return (
         <div className="px-3 py-4 sm:px-4 lg:px-6">
@@ -19,6 +36,7 @@ const Watch = () => {
                 </div>
 
                 <div className="w-full min-w-0">
+                    <VideoOptions />
                     <Comment />
                 </div>
             </div>
