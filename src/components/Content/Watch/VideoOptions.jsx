@@ -17,8 +17,6 @@ const VideoOptions = ({ videoId }) => {
         statistics: { viewCount } = {},
     } = videoInfo || {};
 
-    console.log("VideoInfo: ", videoInfo);
-
     return (
         <div className="w-full -mt-4 mb-4">
             {/* Title */}

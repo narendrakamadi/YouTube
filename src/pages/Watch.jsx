@@ -1,7 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 import Video from "../components/Content/Watch/Video";
 import Comment from "../components/Content/Watch/Comment";
-import RecomendedVideos from "../components/Content/Watch/RecomendedVideos";
+import RelatedVideos from "../components/Content/Watch/RelatedVideos";
 import VideoOptions from "../components/Content/Watch/VideoOptions";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,7 +22,7 @@ const Watch = () => {
         } else {
             // fetchVideosFromAPI();
         }
-    });
+    }, [videos.length, dispatch]);
 
     return (
         <div className="px-3 py-4 sm:px-4 lg:px-6">
@@ -32,7 +32,7 @@ const Watch = () => {
                 </div>
 
                 <div className="w-full min-w-0 lg:row-span-2">
-                    <RecomendedVideos />
+                    <RelatedVideos videoId={videoId} />
                 </div>
 
                 <div className="w-full min-w-0">
