@@ -3,12 +3,28 @@ import SearchSuggestions from "./SearchSuggestions";
 import { useDispatch } from "react-redux";
 import { setAutoSearch } from "../../utils/appSlice";
 import { useEffect, useRef } from "react";
+import { setSearchSuggestions } from "../../utils/videoSlice";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
     const searchRef = useRef(null);
+    const searchKeyword = useRef(null);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+
     const handleClick = () => {
         dispatch(setAutoSearch(true));
+    };
+
+    const handleSearch = () => {
+        const search = searchKeyword?.current?.value;
+
+        if (!search) return;
+
+        dispatch(setSearchSuggestions(search));
+        dispatch(setAutoSearch(false));
+
+        navigate(`/results?search_query=${encodeURIComponent(search)}`);
     };
 
     useEffect(() => {
@@ -36,6 +52,12 @@ const Search = () => {
                 <div className="flex items-center border border-gray-300 rounded-full overflow-hidden bg-white hover:border-gray-400 hover:shadow-sm transition">
                     {/* Input */}
                     <input
+                        ref={searchKeyword}
+                        onKeyDown={(e) => {
+                            if (e.key === "Enter") {
+                                handleSearch();
+                            }
+                        }}
                         type="text"
                         placeholder="Search"
                         className="flex-1 px-3 sm:px-4 py-1.5 sm:py-2 outline-none text-sm"
@@ -43,7 +65,10 @@ const Search = () => {
                     />
 
                     {/* Search Button */}
-                    <button className="px-3 sm:px-5 py-1.5 sm:py-2 border-l border-gray-300 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+                    <button
+                        onClick={handleSearch}
+                        className="px-3 sm:px-5 py-1.5 sm:py-2 border-l border-gray-300 bg-gray-50 hover:bg-gray-100 transition cursor-pointer"
+                    >
                         <SearchIcon size={18} className="text-gray-600" />
                     </button>
                 </div>

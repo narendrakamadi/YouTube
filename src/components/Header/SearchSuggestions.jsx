@@ -5,6 +5,7 @@ import { setAutoSearch } from "../../utils/appSlice";
 
 const SearchSuggestions = () => {
     const dispatch = useDispatch();
+
     const isAutoCompleteOpen = useSelector(
         (store) => store.app.isAutoSearchOpen,
     );
