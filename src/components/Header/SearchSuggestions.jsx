@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { setAutoSearch } from "../../utils/appSlice";
 
-const Autocomplete = () => {
+const SearchSuggestions = () => {
     const dispatch = useDispatch();
     const isAutoCompleteOpen = useSelector(
         (store) => store.app.isAutoSearchOpen,
@@ -172,4 +172,4 @@ const Autocomplete = () => {
     );
 };
 
-export default Autocomplete;
+export default SearchSuggestions;

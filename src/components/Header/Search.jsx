@@ -1,5 +1,5 @@
 import { Search as SearchIcon, Mic } from "lucide-react";
-import Autocomplete from "./Autocomplete";
+import SearchSuggestions from "./SearchSuggestions";
 import { useDispatch } from "react-redux";
 import { setAutoSearch } from "../../utils/appSlice";
 import { useEffect, useRef } from "react";
@@ -49,7 +49,7 @@ const Search = () => {
                 </div>
 
                 {/* Autocomplete Dropdown */}
-                <Autocomplete />
+                <SearchSuggestions />
             </div>
 
             {/* Mic Button */}
