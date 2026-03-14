@@ -60,9 +60,7 @@ const Results = () => {
                                     </p>
 
                                     <p className="hidden sm:block text-sm text-gray-600 max-w-2xl">
-                                        Node JS tutorial in Hindi #1
-                                        Introduction | what is NodeJS |
-                                        Installation and setup.
+                                        {video?.snippet?.description}
                                     </p>
                                 </div>
                             </div>

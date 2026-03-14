@@ -9,7 +9,7 @@ const useSearchVideos = (query) => {
         if (!query) return;
 
         const fetchVideos = async () => {
-            const searchUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=20&q=${encodeURIComponent(query)}&key=${YOUTUBE_API_KEY}`;
+            const searchUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=20&q=${encodeURIComponent(query)}&key=${YOUTUBE_API_KEY}`;
 
             const response = await fetch(searchUrl);
             const json = await response.json();
