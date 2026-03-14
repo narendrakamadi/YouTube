@@ -1,18 +1,33 @@
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { YOUTUBE_VIDEOS_API } from '../utils/Constants';
 import { addVideos } from "../utils/videoSlice";
+import {
+    YOUTUBE_VIDEOS_API,
+    YOUTUBE_RELATED_VIDEOS_API
+} from "../utils/Constants";
 
-const useVideoFeed = () => {
+const YOUTUBE_API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+
+const useVideoFeed = (filter) => {
     const [videos, setVideos] = useState([]);
     const dispatch = useDispatch();
 
     useEffect(() => {
         const getVideos = async () => {
             try {
-                const data = await fetch(YOUTUBE_VIDEOS_API);
+                let url = YOUTUBE_VIDEOS_API;
+
+                // if chip is not "All" use search API
+                if (filter && filter !== "All") {
+                    url = `${YOUTUBE_RELATED_VIDEOS_API}&q=${encodeURIComponent(
+                        filter
+                    )}&key=${YOUTUBE_API_KEY}`;
+                }
+
+                const data = await fetch(url);
                 const json = await data.json();
                 const items = Array.isArray(json?.items) ? json.items : [];
+
                 setVideos(items);
                 dispatch(addVideos(items));
                 localStorage.setItem("videos", JSON.stringify(items));
@@ -23,7 +38,7 @@ const useVideoFeed = () => {
         };
 
         getVideos();
-    }, [dispatch]);
+    }, [filter, dispatch]);
 
     return videos;
 }

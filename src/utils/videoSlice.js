@@ -4,17 +4,15 @@ const videoSlice = createSlice({
     name: "videos",
     initialState: {
         videos: [],
-        searchSuggestions: [],
-        nextPageToken: null,
-        loading: false,
-        error: null
+        filter: "All",
+        searchSuggestions: []
     },
     reducers: {
-        setLoading: (state, action) => {
-            state.loading = action.payload;
-        },
         addVideos: (state, action) => {
             state.videos = action.payload;
+        },
+        setFilter: (state, action) => {
+            state.filter = action.payload;
         },
         setSearchSuggestions: (state, action) => {
             const keyword = action.payload;
@@ -27,5 +25,5 @@ const videoSlice = createSlice({
     }
 });
 
-export const { addVideos, setLoading, setSearchSuggestions } = videoSlice.actions;
+export const { addVideos, setFilter, setSearchSuggestions } = videoSlice.actions;
 export default videoSlice.reducer;

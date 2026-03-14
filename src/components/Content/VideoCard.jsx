@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { formatViews, timeAgo } from "../../utils/Helper";
 
 const VideoCard = ({ video }) => {
-    const {
-        id,
-        snippet: { title, thumbnails, channelTitle, publishedAt },
-        statistics: { viewCount },
-    } = video;
+    const id = video?.id?.videoId || video?.id;
+    const snippet = video?.snippet || {};
+    const statistics = video?.statistics || {};
+    const { title, thumbnails, channelTitle, publishedAt } = snippet;
+    const { viewCount } = statistics;
 
     return (
         <Link key={id} to={"/watch?v=" + id}>
@@ -36,7 +36,7 @@ const VideoCard = ({ video }) => {
                         <p className="text-sm text-gray-600">{channelTitle}</p>
 
                         <p className="text-sm text-gray-600">
-                            {formatViews(viewCount)} views •{" "}
+                            {viewCount ? formatViews(viewCount) : "—"} views •{" "}
                             {timeAgo(publishedAt)}
                         </p>
                     </div>
