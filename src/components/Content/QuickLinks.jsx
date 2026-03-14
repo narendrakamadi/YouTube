@@ -1,36 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { filterChips } from "../../utils/Constants";
 
 const QuickLinks = () => {
     const [activeChip, setActiveChip] = useState(0);
-    const quickLinks = [
-        "All",
-        "Music",
-        "News",
-        "Mixes",
-        "Hariharan",
-        "Live",
-        "Mantras",
-        "Podcasts",
-        "Movie musicals",
-        "Jukebox",
-        "APIs",
-        "Playlists",
-        "Data Structures",
-        "Bloom",
-        "Joy",
-        "Current Affaires",
-    ];
-
     const handleFilterChips = (index) => {
         setActiveChip(index);
-        console.log("Selected Chip: ", index);
     };
 
     return (
         <div className="sticky top-0 z-40 bg-white border-b border-gray-200">
             <div className="overflow-x-auto">
                 <div className="flex gap-3 px-4 py-3 w-max">
-                    {quickLinks.map((item, index) => (
+                    {filterChips.map((item, index) => (
                         <button
                             key={index}
                             onClick={() => handleFilterChips(index)}
