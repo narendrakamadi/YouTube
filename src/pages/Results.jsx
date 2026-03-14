@@ -11,8 +11,6 @@ const Results = () => {
 
     if (!searchResults?.length) return null;
 
-    console.log(searchResults);
-
     return (
         <div className="flex overflow-x-hidden">
             {/* Sidebar */}
